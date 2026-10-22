@@ -2,6 +2,7 @@
 Debug/
 Release/
 .settings/
+.metadata/
 
 # Archivos de depuración local
 *.launch
