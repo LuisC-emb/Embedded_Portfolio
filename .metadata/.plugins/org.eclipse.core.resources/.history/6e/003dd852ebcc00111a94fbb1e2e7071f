@@ -1,0 +1,18 @@
+
+#ifndef DRIVERS_LED_H_
+#define DRIVERS_LED_H_
+
+#include "stm32f410rb.h"
+
+// La "Clase / Estructura" que modela al objeto físico LED
+typedef struct {
+    GPIO_TypeDef *port;
+    uint16_t pin;
+} LED_t;
+
+// Los "Métodos" del objeto
+void LED_Init(LED_t *obj);
+void LED_SetState(LED_t *obj, uint8_t state);
+void LED_SetBrightness(LED_t *obj, uint16_t pwm_value);
+
+#endif

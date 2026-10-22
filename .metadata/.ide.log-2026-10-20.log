@@ -1,0 +1,6 @@
+2026-10-20 17:48:54,226 [INFO] Activator:177 - 
+
+
+2026-10-20 17:48:54,238 [INFO] Activator:178 - !SESSION log4j initialized
+2026-10-20 17:49:04,760 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-10-20 17:49:08,175 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out

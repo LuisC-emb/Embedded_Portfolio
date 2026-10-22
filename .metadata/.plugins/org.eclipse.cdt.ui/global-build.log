@@ -1,0 +1,186 @@
+10:36:22 **** Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f410rbtx.d" -MT"Startup/startup_stm32f410rbtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f410rbtx.o" "../Startup/startup_stm32f410rbtx.s"
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:85:15: error: 'GPIO_TypeDef' has no member named 'OSPEEDR'; did you mean 'OSPEEDER'?
+   85 |         port->OSPEEDR &= ~(0x3U << (pin * 2));
+      |               ^~~~~~~
+      |               OSPEEDER
+../Src/gpio.c:86:15: error: 'GPIO_TypeDef' has no member named 'OSPEEDR'; did you mean 'OSPEEDER'?
+   86 |         port->OSPEEDR |= ((uint32_t)speed << (pin * 2));
+      |               ^~~~~~~
+      |               OSPEEDER
+../Src/gpio.c:94:23: error: 'GPIO_TypeDef' has no member named 'AFR'; did you mean 'AFRL'?
+   94 |                 port->AFR[0] &= ~(0xFU << (pin * 4));
+      |                       ^~~
+      |                       AFRL
+../Src/gpio.c:95:23: error: 'GPIO_TypeDef' has no member named 'AFR'; did you mean 'AFRL'?
+   95 |                 port->AFR[0] |= ((uint32_t)alt_func << (pin * 4));
+      |                       ^~~
+      |                       AFRL
+../Src/gpio.c:97:23: error: 'GPIO_TypeDef' has no member named 'AFR'; did you mean 'AFRL'?
+   97 |                 port->AFR[1] &= ~(0xFU << ((pin - 8) * 4));
+      |                       ^~~
+      |                       AFRL
+../Src/gpio.c:98:23: error: 'GPIO_TypeDef' has no member named 'AFR'; did you mean 'AFRL'?
+   98 |                 port->AFR[1] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                       ^~~
+      |                       AFRL
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:37:43 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:94:27: error: subscripted value is neither array nor pointer nor vector
+   94 |                 port->AFRL[0] &= ~(0xFU << (pin * 4));
+      |                           ^
+../Src/gpio.c:95:27: error: subscripted value is neither array nor pointer nor vector
+   95 |                 port->AFRL[0] |= ((uint32_t)alt_func << (pin * 4));
+      |                           ^
+../Src/gpio.c:97:27: error: subscripted value is neither array nor pointer nor vector
+   97 |                 port->AFRL[1] &= ~(0xFU << ((pin - 8) * 4));
+      |                           ^
+../Src/gpio.c:98:27: error: subscripted value is neither array nor pointer nor vector
+   98 |                 port->AFRL[1] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:40:05 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:40:12 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:40:33 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:40:53 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:41:31 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:42:04 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:43:13 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+../Src/gpio.c: In function 'gpio_init_alt_function':
+../Src/gpio.c:98:27: error: expected ';' before ']' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                           ^
+      |                           ;
+../Src/gpio.c:98:27: error: expected statement before ']' token
+../Src/gpio.c:98:29: error: expected expression before '|=' token
+   98 |                 port->AFRH] |= ((uint32_t)alt_func << ((pin - 8) * 4));
+      |                             ^~
+make: *** [Src/subdir.mk:31: Src/gpio.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:43:34 **** Incremental Build of configuration Debug for project States_Of_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+arm-none-eabi-gcc -o "States_Of_LED.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded\STM32Portfolio\States_Of_LED\STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="States_Of_LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: States_Of_LED.elf
+ 
+arm-none-eabi-size  States_Of_LED.elf 
+arm-none-eabi-objdump -h -S States_Of_LED.elf  > "States_Of_LED.list"
+   text	   data	    bss	    dec	    hex	filename
+   1448	      0	   1568	   3016	    bc8	States_Of_LED.elf
+Finished building: default.size.stdout
+ 
+Finished building: States_Of_LED.list
+ 
+12:56:40 **** Build of configuration Debug for project 6.5_NonBlocking_Delay ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f410rbtx.d" -MT"Startup/startup_stm32f410rbtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f410rbtx.o" "../Startup/startup_stm32f410rbtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F410RBTx -DSTM32 -DNUCLEO_F410RB -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "6.5_NonBlocking_Delay.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded\STM32BareCourse\Module6_NVIC_EXTI_FSM\6.5Non_blockingDelay_NVIC\STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6.5_NonBlocking_Delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 6.5_NonBlocking_Delay.elf
+ 
+arm-none-eabi-size  6.5_NonBlocking_Delay.elf 
+arm-none-eabi-objdump -h -S 6.5_NonBlocking_Delay.elf  > "6.5_NonBlocking_Delay.list"
+   text	   data	    bss	    dec	    hex	filename
+    936	      0	   1568	   2504	    9c8	6.5_NonBlocking_Delay.elf
+Finished building: default.size.stdout
+ 
+Finished building: 6.5_NonBlocking_Delay.list
+ 

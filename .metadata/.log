@@ -1,0 +1,103 @@
+!SESSION 2026-10-18 10:06:36.148 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-18 10:06:54.041
+!MESSAGE Log4j2 initialized with config file D:\Embedded\STM32Portfolio\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-18 10:06:56.828
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 10:06:57.851
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 10:06:57.868
+!MESSAGE port: COM1
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 10:07:41.304
+!MESSAGE Indexed 'States_Of_LED' (3 sources, 53 headers) in 0.634 sec: 1,954 declarations; 2,867 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:36:24.154
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:37:44.027
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:40:05.993
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:40:12.706
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:40:33.427
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:40:53.380
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:41:31.680
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:42:05.288
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-10-18 10:43:13.879
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 12:41:04.103
+!MESSAGE Indexed '43SysTick' (3 sources, 56 headers) in 0.321 sec: 2,117 declarations; 3,147 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 12:45:52.176
+!MESSAGE Indexed '44_PWM' (5 sources, 3 headers) in 0.023 sec: 147 declarations; 155 references; 12 unresolved inclusions; 0 syntax errors; 92 unresolved names (23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 12:53:45.554
+!MESSAGE Indexed '6.5_NonBlocking_Delay' (3 sources, 53 headers) in 0.16 sec: 1,954 declarations; 2,867 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+!SESSION 2026-10-20 17:48:28.496 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-20 17:48:53.299
+!MESSAGE Log4j2 initialized with config file D:\Embedded\STM32Portfolio\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-20 17:49:06.590
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-20 17:49:07.880
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-20 17:49:07.880
+!MESSAGE port: COM1
+!SESSION 2026-10-22 15:21:53.584 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  D:\Embedded\STM32Portfolio\States_Of_LED\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\Embedded\STM32Portfolio\States_Of_LED\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-22 15:22:06.470
+!MESSAGE Log4j2 initialized with config file D:\Embedded\STM32Portfolio\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-22 15:22:18.988
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-22 15:22:23.020
+!MESSAGE Indexed 'States_Of_LED' (6 sources, 57 headers) in 1.15 sec: 2,212 declarations; 3,407 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.036%)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-22 15:22:23.929
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-22 15:22:23.930
+!MESSAGE port: COM1
